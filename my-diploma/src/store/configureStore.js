@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 
 import createSagaMiddleware from "redux-saga";
-import pokemonSlice from "../pages/SignUp/SignUpReducer/reducerSignUp";
+import pokemonSlice from "../AppReducer";
 import rootSaga from "../saga/rootSaga";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";

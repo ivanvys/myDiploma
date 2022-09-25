@@ -1,4 +1,4 @@
-import { signInRequest } from "../pages/SignUp/SignUpReducer/reducerSignUp";
+import { signInRequest } from "../AppReducer";
 import { signInRequestApi } from "../pages/SignIn/api/index";
 
 export const apiFunctionsMap = (action) => {

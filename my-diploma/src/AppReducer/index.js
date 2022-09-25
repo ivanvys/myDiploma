@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { LOCAL_STORAGE_KEYS } from "../../../constants";
+import { LOCAL_STORAGE_KEYS } from "../constants";
 
-const pokemonSlice = createSlice({
+const authSlice = createSlice({
   name: "pokemons",
   initialState: {
     isLoading: false,
@@ -29,7 +29,6 @@ const pokemonSlice = createSlice({
   },
 });
 
-export const { signInRequest, signInSuccess, signInFailed } =
-  pokemonSlice.actions;
+export const { signInRequest, signInSuccess, signInFailed } = authSlice.actions;
 
-export default pokemonSlice.reducer;
+export default authSlice.reducer;

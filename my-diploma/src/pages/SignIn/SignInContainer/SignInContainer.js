@@ -1,7 +1,7 @@
 import { useForm } from "../../../customHooks/useForm";
 import { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signInRequest } from "../../SignUp/SignUpReducer/reducerSignUp";
+import { signInRequest } from "../../../AppReducer";
 import { pokemonSelector } from "../selector/selector";
 import { useNavigate } from "react-router-dom";
 import ROUTE_NAMES from "../../../router/routeName";
