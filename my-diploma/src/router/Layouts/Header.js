@@ -6,29 +6,27 @@ import startCase from "lodash/startCase";
 import Pokeball from "../../static/pokeball.png";
 import { useSelector } from "react-redux";
 import { pokemonSelector } from "../../AppReducer/selector/selector";
-import LogOut from "../../Components/LogOut/LogOut";
+import LogOut from "../../Components/LogOut";
+import Cart from "../../static/cart.png";
 
 const Header = () => {
-  const { isAuth } = useSelector(pokemonSelector);
+  const { isAuth, cart } = useSelector(pokemonSelector);
+
   return (
     <div className={styles.header}>
       <Link className={styles.link} to={ROUTE_NAMES.home}>
         <img src={Pokeball} className={styles.pokeball} />
       </Link>
       {isAuth && (
-        <Link className={styles.link} to={ROUTE_NAMES.products}>
-          {startCase(capitalize(ROUTE_NAMES.products))}
-        </Link>
-      )}
-      {isAuth && (
-        <Link className={styles.link} to={ROUTE_NAMES.products_details}>
-          {startCase(capitalize("Pokemon Detail"))}
-        </Link>
-      )}
-      {isAuth && (
         <div className={styles.logOut}>
           <LogOut />
         </div>
+      )}
+      {isAuth && (
+        <Link to={ROUTE_NAMES.cart}>
+          <img src={Cart} className={styles.cart} />
+          <div className={styles.theNumderOfOrders}>{cart.quantity}</div>
+        </Link>
       )}
       {!isAuth && (
         <div className={styles.signInAndSignUp}>

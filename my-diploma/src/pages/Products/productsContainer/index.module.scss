@@ -12,9 +12,9 @@
 }
 
 .header{
-    display: inline-block;
-    margin: 0 auto;
-    font-family: 'Pokemon Solid';
+display: inline-block;
+margin: 0 auto;
+font-family: 'Pokemon Solid';
 -webkit-text-stroke: 1px rgb(53, 100, 174);
 -webkit-text-fill-color: rgb(255, 203, 5);
 font-size: larger;
@@ -25,6 +25,7 @@ margin-block-start: -16px;
     position: absolute;
     top: 45%;
     left: 48%;
+    z-index: 3;
 }
 
 .pokeCard{
@@ -39,4 +40,5 @@ margin-block-start: -16px;
 
 .underWrapper{
     min-height: 708px;
+    
 }

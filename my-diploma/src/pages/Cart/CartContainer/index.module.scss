@@ -1,0 +1,15 @@
+.spinner{
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    z-index: 3;
+}
+
+    .wrapper{    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../../static/FonProducts2.jpg);
+    background-position: center;
+    }

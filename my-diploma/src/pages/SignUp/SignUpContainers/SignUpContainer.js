@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ROUTE_NAMES from "../../../router/routeName";
 import styles from "./index.module.scss";
 import SignUpComponents from "../SignUpComponents/SignUpComponents";
-import Spinner from "../../../Components/loading/Spinner";
+import Spinner from "../../../Components/Loading";
 
 const SignUpContainer = () => {
   const navigate = useNavigate();

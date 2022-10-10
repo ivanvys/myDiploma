@@ -36,9 +36,9 @@ font-family: 'Pokemon Solid';
     .errorResponse {
     font-family: 'Titan One', cursive;
     color: rgb(236, 96, 3);
-font-size: larger;
-position: absolute;
-left: 43%;
+    font-size: larger;
+    position: absolute;
+    left: 43%;
     }
     
     .button{
@@ -64,33 +64,34 @@ left: 43%;
     }
 
     .Ash{
-        max-width: 14vw;
-        position: absolute;
-        z-index: 3;
-        top: 43vh;
-        left: 64vw;
+    max-width: 14vw;
+    position: absolute;
+    z-index: 3;
+    top: 43vh;
+    left: 64vw;
     }
 
     .wrapper{
-        position: absolute;
-        background-color: white;
-        border: solid 2px red
+    position: absolute;
+    background-color: white;
+    border: solid 2px red
     }
 
     .inputGroup{
-        display: flex;
-        flex-direction: column;
-        cursor: url(../../../static/newFinger.png),default;
+    display: flex;
+    flex-direction: column;
+    cursor: url(../../../static/newFinger.png),default;
     }
         
     .errorInputMessage{
-        display: inline;
-        font-family: 'Permanent Marker', cursive;
-        color: red;
+    display: inline;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
     }
 
     .spinner{
-        position: absolute;
-        top: 45%;
-        left: 48%;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    z-index:3
     }

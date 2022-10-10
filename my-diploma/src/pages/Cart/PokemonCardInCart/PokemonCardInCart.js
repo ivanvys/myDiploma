@@ -4,29 +4,17 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import styles from "./index.module.scss";
 
-const PokemonCard = ({
+const PokemonCardInCart = ({
   name,
   image,
   price,
   id,
   handlePokemonsDetail,
-  handleAddPokeToCart,
+  handleDeletePokemonFromCart,
 }) => {
   return (
     <Card sx={{ maxWidth: 345, maxHeight: 300 }}>
-      <button
-        onClick={() =>
-          handleAddPokeToCart({
-            id: id,
-            name: name,
-            image: image,
-            quantity: 1,
-            price: price,
-          })
-        }
-      >
-        Add to cart
-      </button>
+      <button onClick={() => handleDeletePokemonFromCart(id)}>Delete</button>
       <CardMedia
         component="img"
         height="130"
@@ -35,7 +23,6 @@ const PokemonCard = ({
         onClick={() => handlePokemonsDetail(id)}
         className={styles.cardMedia}
       />
-
       <CardContent sx={{ backgroundColor: "pink" }}>
         <Typography
           gutterBottom
@@ -53,4 +40,4 @@ const PokemonCard = ({
   );
 };
 
-export default PokemonCard;
+export default PokemonCardInCart;

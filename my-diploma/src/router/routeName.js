@@ -4,6 +4,7 @@ const ROUTE_NAMES = {
   sign_in: "/sign-in",
   products: "/products",
   products_details: "/products/:id",
+  cart: "/cart",
 };
 
 export default ROUTE_NAMES;

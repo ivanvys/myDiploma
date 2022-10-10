@@ -2,10 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import ROUTE_NAMES from "./routeName";
 import SignUpContainer from "../pages/SignUp/SignUpContainers/SignUpContainer";
 import SignInContainer from "../pages/SignIn/SignInContainers/SignInContainer";
-import ProductsContainer from "../pages/Products/productsContainer/ProductsContainer";
+import ProductsContainer from "../pages/Products/ProductsContainer/ProductsContainer.js";
 import PrivateRoute from "./PrivateRoute";
-import HomePage from "../pages/Home";
+import HomePage from "../pages/Home/Home.js";
 import PokemonDetailContainer from "../pages/PokemonDetail/PokemonDetalContainers/PokemonDetailContainer";
+import CartContainer from "../pages/Cart/CartContainer/CartContainer";
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
           path={ROUTE_NAMES.products_details}
           element={<PokemonDetailContainer />}
         />
+        <Route path={ROUTE_NAMES.cart} element={<CartContainer />} />
       </Route>
     </Routes>
   );

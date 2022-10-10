@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../../../static/fonts/Pokemon\ Solid.ttf') format("TrueType");
+}
+
+.pokeCard{
+    display: inline-block;
+    margin-left: 10px,
+    }
+
+    .underWrapper{
+    min-height: 775px;
+    }
+
+    .orderText{
+        font-family: 'Pokemon Solid';
+-webkit-text-stroke: 1.5px rgb(53, 100, 174);
+-webkit-text-fill-color: rgb(255, 203, 5);
+font-size: 2vw;
+    }

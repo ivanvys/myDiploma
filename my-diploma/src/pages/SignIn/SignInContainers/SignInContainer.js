@@ -1,9 +1,13 @@
+import styles from "./index.module.scss";
+
 import { useCallback, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { pokemonSelector } from "../../../AppReducer/selector/selector";
 import { useNavigate } from "react-router-dom";
+
+import { pokemonSelector } from "../../../AppReducer/selector/selector";
+
 import ROUTE_NAMES from "../../../router/routeName";
-import styles from "./index.module.scss";
+
 import SingInComponents from "../SignInComponents/SingInComponents";
 
 const SignInContainer = () => {
@@ -19,7 +23,7 @@ const SignInContainer = () => {
   }, [isAuth]);
 
   return (
-    <div className={styles.main}>
+    <div className={styles.wrapper}>
       <SingInComponents
         isLoading={isLoading}
         error={error}

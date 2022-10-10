@@ -1,12 +1,16 @@
 import styles from "./index.module.scss";
+
 import { Formik, Form } from "formik";
-import Spinner from "../../../Components/loading/Spinner";
-import Ash from "../../../static/ash.png";
-import { useDispatch } from "react-redux";
-import { signInRequest } from "../../../AppReducer";
 import * as Yup from "yup";
 import { Grid } from "@mui/material";
+
+import { useDispatch } from "react-redux";
+import { signInRequest } from "../../../AppReducer";
+
 import TextFieldWrapper from "../../SignUp/SignUpComponents/FormsUI/Textfield/index";
+import Spinner from "../../../Components/Loading";
+
+import Ash from "../../../static/ash.png";
 
 const SingInComponents = ({ isLoading, error, handleRedirectToSignUp }) => {
   const dispatch = useDispatch();
