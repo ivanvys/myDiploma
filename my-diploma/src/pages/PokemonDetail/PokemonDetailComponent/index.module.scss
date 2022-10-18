@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+    
+    .contentWrapper {
+    width: 60%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    }
+    
+    .image{
+    width: 364px;
+    margin: 0 auto;
+    }
+    
+    .buttonsWrapper{
+    display: flex;
+    justify-content: center;
+    }
+
+    .button{
+    cursor: url(../../../static/newFinger.png),pointer;
+    border: solid 2px rgb(11, 65, 109);
+    border-radius: 10px;
+    background-color: rgba(236, 22, 129, 0.3);
+    font-family: 'Titan One', cursive;
+    color: rgb(122, 4, 231);
+    width: 10vw;
+    height: 5vh;
+    font-size: 1vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    }
+    .button:active{
+    background-color: rgb(223, 154, 154,0.7);
+    }
+    .button:hover{
+    border: solid 2px rgb(177, 100, 100,1);
+    }
+    
+    .imageWrapper{
+    margin-top: 13vh;
+    }
+    
+    .imageWrapper:hover::after {
+    content: attr(data-title); 
+    position: absolute; 
+    left: 40%; top: 30%; 
+    z-index: 1; 
+    background: rgba(255,255,230,0.9); 
+    font-family: 'Pokemon Solid';
+    -webkit-text-stroke: 1.5px rgb(53, 100, 174);
+    -webkit-text-fill-color: rgb(255, 203, 5);
+    font-size: 20px; 
+    padding: 5px 10px; 
+    border: 1px solid #333; 
+    border-radius: 10px;
+    }
+    
+    .inscriptionClickOnMe{
+    font-family: 'Pokemon Solid';
+    font-size: larger;
+    -webkit-text-stroke: 1.5px rgb(53, 100, 174);
+    -webkit-text-fill-color: rgb(255, 203, 5);
+    margin: 0;
+    }

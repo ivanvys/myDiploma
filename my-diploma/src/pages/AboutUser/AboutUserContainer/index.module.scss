@@ -1,0 +1,13 @@
+.wrapper {
+background-image: url(../../../static/UserBackImage.png);
+height: 96vh;
+overflow: overlay;
+background-size: cover;
+}
+
+.spinner{
+position: absolute;
+top: 45%;
+left: 48%;
+z-index: 3;
+}

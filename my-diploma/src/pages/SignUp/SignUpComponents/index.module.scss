@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('../../../static/fonts/Pokemon\ Solid.ttf') format("TrueType");
+}
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
+
+.mainWrapper{
+    margin: 0 auto;
+    height: 50vh;
+    }
+
+.input{
+    cursor: url(../../../static/newFinger.png),default;
+    }
+
+.buttonCreateAccount{
+    border: solid 2px rgb(177, 100, 100,0.5);
+    border-radius: 10px;
+    background-color: rgb(223, 154, 154,0.3);
+    font-family: 'Bungee Spice', cursive;
+    cursor: url(../../../static/newFinger.png),default;
+    width: 15vw;
+    height: 10vh;
+    font-size: 2vw;
+    }
+    
+.buttonCreateAccount:active{
+    background-color: rgb(223, 154, 154,0.7);
+    }
+    
+.buttonCreateAccount:hover{
+    border: solid 2px rgb(177, 100, 100,1);
+    }
+    
+.signUpMessage{
+    position:absolute;
+    top: 5vh;
+    left: 35vw;
+    }
+    
+.text{
+font-family: 'Pokemon Solid';
+-webkit-text-stroke: 1.5px rgb(53, 100, 174);
+-webkit-text-fill-color: rgb(255, 203, 5);
+font-size: 2vw;
+height: 42px;
+margin: 0;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    cursor: url(../../../static/newFinger.png),default;
+}
+    
+.errorInputMessage{
+    display: inline;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+
+.formBlock{
+    margin-top: 6vh;
+}
+
+.formPlusTextBlock{
+    margin-top: 5vh;
+}
+
+.errorResponse {
+
+    font-family: 'Titan One', cursive;
+    color: rgb(241, 99, 99);
+    font-size: 1.5vw;
+    position: absolute;
+    left: 35%;
+    }
