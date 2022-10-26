@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+.cardMedia{
+cursor: url(../../../static/newFinger.png),default;
+background-color: yellowgreen;
+}
+
+.trashImage{
+position: relative;
+top: 5px;
+}
+
+.quantity{
+display: block;
+margin: 5px auto;
+}
+
+.buttonArea{
+display: flex;
+justify-content: space-evenly;
+}
+
+.button{
+border: solid 2px rgb(177, 100, 100,0.5);
+border-radius: 20px;
+background-color: rgba(224, 164, 164, 0.7);
+font-family: 'Titan One', cursive;
+font-size: 25px;
+color: rgb(223, 252, 170);
+-webkit-text-stroke: 1.5px rgb(53, 100, 174);
+-webkit-text-fill-color: rgb(255, 203, 5);
+cursor: url(../../../static/newFinger.png),default;
+margin-bottom: 5px;
+}
+.button:active{
+background-color: rgb(223, 154, 154,0.7);
+}
+.button:hover{
+border: solid 2px rgb(177, 100, 100,1);
+}

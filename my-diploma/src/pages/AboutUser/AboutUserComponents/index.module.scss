@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+.wrapper{
+display: flex;
+margin: 0 auto;
+}
+
+.subWrapper{
+display: grid;
+margin: 0 auto;
+}
+
+.ordersBlock{
+display: grid;
+}
+
+.ordersWrapper{
+display: inline-grid;
+}
+
+.order{
+border-bottom: 2px dashed blue;
+}
+
+.text{
+font-family: 'Grandstander', cursive;
+font-size: 25px;
+margin: 5px auto;
+}
+
+.textOrder{
+font-family: 'Grandstander', cursive;
+font-size: 20px;
+margin: 5px auto;
+}
+
+.textOrderWrapper{
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.dropbtn {
+font-family: 'Grandstander', cursive;
+background-color: #f8f825;
+color: rgb(100, 70, 79);
+padding: 16px;
+font-size: 16px;
+border: 2px inset rgb(196, 98, 98);
+}
+
+.dropdown {
+margin-top: 15px;
+display: inline-block;
+}
+
+.dropdownContent {
+color: rgb(2, 15, 2);
+border-right: 2px inset rgb(196, 98, 98);
+border-left: 2px inset rgb(196, 98, 98);
+border-bottom: 2px inset rgb(196, 98, 98);
+background-color: #f8f825;
+display: none;
+position: relative;
+min-width: 160px;
+z-index: 1;
+}
+
+.content {
+border-bottom: 2px dotted rgb(196, 98, 98);
+}
+
+.dropdown:hover .dropdownContent {
+display: block;
+}
+
+.button{
+margin: 0 auto;
+border: solid 2px rgb(177, 100, 100,0.5);
+border-radius: 10px;
+background-color: rgba(224, 164, 164, 0.7);
+font-family: 'Titan One', cursive;
+color: rgb(223, 252, 170);
+-webkit-text-stroke: 1.5px rgb(53, 100, 174);
+-webkit-text-fill-color: rgb(255, 203, 5);
+cursor: url(../../../static/newFinger.png),default;
+width: 15vw;
+height: 10vh;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 2vw;
+}
+.button:active{
+background-color: rgb(223, 154, 154,0.7);
+}
+.button:hover{
+border: solid 2px rgb(177, 100, 100,1);
+}
+
+.totalPriceSection{
+display: flex;
+justify-content: center;
+text-align: center;
+color: rgb(73, 106, 212);
+font-family: 'Grandstander', cursive;
+font-size: 20px;
+}

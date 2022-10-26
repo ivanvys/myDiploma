@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+.header{
+background: yellowgreen; 
+height: 4vh;
+display: flex;
+justify-content: space-between;
+}
+
+.pokeball{
+width: 27px; 
+margin-top: 3px;
+}
+
+.logOutCartUserPages{
+display: flex;
+justify-content: space-evenly;
+width: 230px;
+cursor: url(../../static//newFinger.png),default;
+}
+
+.signInAndSignUp{
+display: flex;
+width: 100%;
+justify-content: flex-end;
+margin-right: 100px;
+}
+
+.link{
+font-family: 'Nabla', cursive;
+font-size: 20px;
+margin-left: 20px;
+text-decoration: none;
+cursor: url(../../static//newFinger.png),default;
+}
+
+.theNumderOfOrders{
+font-family: 'Nabla', cursive;
+font-size: 20px;
+margin-left: 5px;
+text-decoration: none;
+cursor: url(../../static//newFinger.png),default;
+display: inline-block
+}
+
+.cart{
+width: 25px;
+height: 25px;
+margin-top: 5px;
+cursor: url(../../static//newFinger.png),default;
+}
