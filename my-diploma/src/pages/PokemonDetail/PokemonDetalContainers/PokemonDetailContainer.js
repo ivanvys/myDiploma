@@ -5,10 +5,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useCart } from "../../../customHooks/useCart";
 
-import {
-  detailPokemonInfoRequest,
-  clearDetailPokemonInfo,
-} from "../../../AppReducer";
+import { detailPokemonInfoRequest, clearData } from "../../../AppReducer";
 import { pokemonStatsWithIcons, inCartOrNot } from "../../../constants";
 import Spinner from "../../../Components/Loading";
 import PokemonDetailComponent from "../PokemonDetailComponent/PokemonDetailComponent";
@@ -26,11 +23,11 @@ const PokemonDetailContainer = () => {
     dispatch(detailPokemonInfoRequest(id));
   }, [id, dispatch]);
 
-  useEffect(() => {
-    return () => {
-      dispatch(clearDetailPokemonInfo());
-    };
-  }, [dispatch]);
+  // useEffect(() => {
+  //   return () => {
+  //     dispatch(clearData());
+  //   };
+  // }, [dispatch]);
 
   const handleClickOpen = useCallback(() => {
     setOpen(true);

@@ -16,7 +16,7 @@ const PokeminDetailComponent = ({
     <div>
       <div className={styles.buttonsWrapper}>
         <button onClick={handleReturnToProductsPage} className={styles.button}>
-          Return to products
+          Return
         </button>
         {inCartOrNot ? null : (
           <button

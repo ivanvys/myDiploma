@@ -1,24 +1,37 @@
-.homePage{
-min-height: 96vh;
+.homePageIsAuth{
+display: grid;
+justify-content: start;
+min-height: 95vh;
+background-image: url(../../static/HomePageWhenIsAuth2.png);
+background-size: cover;
+}
+
+.homePageNotIsAuth{
+min-height: 95vh;
 background-image: url(../../static/HomePage.png);
 background-size: cover;
 }
 
+.buttonWrapper{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
 .button{
-margin: 0 auto;
-border: solid 2px rgb(177, 100, 100,0.5);
-border-radius: 10px;
-background-color: rgba(224, 164, 164, 0.7);
-font-family: 'Titan One', cursive;
-color: rgb(223, 252, 170);
--webkit-text-stroke: 1.5px rgb(53, 100, 174);
--webkit-text-fill-color: rgb(255, 203, 5);
-cursor: url(../../static/newFinger.png),default;
-width: 15vw;
-height: 10vh;
-margin-top: 10px;
-margin-bottom: 10px;
-font-size: 2vw;
+    border: solid 2px rgb(177, 100, 100,0.5);
+    border-radius: 10px;
+    background-color: rgba(224, 164, 164);
+    font-family: 'Titan One', cursive;
+    color: rgb(223, 252, 170);
+    -webkit-text-stroke: 1.5px rgb(53, 100, 174);
+    -webkit-text-fill-color: rgb(255, 203, 5);
+    cursor: url(../../static/newFinger.png),default;
+    min-width: 50px;
+    height: 10vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 .button:active{
 background-color: rgb(223, 154, 154,0.7);

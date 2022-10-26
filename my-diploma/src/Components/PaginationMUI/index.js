@@ -11,6 +11,11 @@ const Pagination = ({ currentPage, handlePageChange, isDesabled }) => {
       variant="outlined"
       shape="rounded"
       disabled={isDesabled}
+      hideNextButton={true}
+      hidePrevButton={true}
+      sx={{
+        backdropFilter: "blur(8px)",
+      }}
     />
   );
 };

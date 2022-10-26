@@ -158,8 +158,9 @@ const authSlice = createSlice({
     whatPage: (state, { payload }) => {
       state.page = payload;
     },
-    clearDetailPokemonInfo: (state) => {
+    clearData: (state) => {
       state.detailPokemonInfo = {};
+      state.error = null;
     },
   },
 });
@@ -184,7 +185,7 @@ export const {
   deletePokemonFromCartSuccess,
   deletePokemonFromCartFailed,
   whatPage,
-  clearDetailPokemonInfo,
+  clearData,
   quantityPokemonInTheCartRequest,
   quantityPokemonInTheCartSuccess,
   quantityPokemonInTheCartFailed,

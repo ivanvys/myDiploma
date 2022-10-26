@@ -86,11 +86,11 @@ color: rgb(223, 252, 170);
 -webkit-text-stroke: 1.5px rgb(53, 100, 174);
 -webkit-text-fill-color: rgb(255, 203, 5);
 cursor: url(../../../static/newFinger.png),default;
-width: 15vw;
+min-width: 50px;
 height: 10vh;
 margin-top: 10px;
 margin-bottom: 10px;
-font-size: 2vw;
+font-size: 30px
 }
 .button:active{
 background-color: rgb(223, 154, 154,0.7);

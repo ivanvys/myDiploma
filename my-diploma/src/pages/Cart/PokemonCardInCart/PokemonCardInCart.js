@@ -46,8 +46,8 @@ const PokemonCardInCart = ({
         <Typography
           gutterBottom
           variant="h5"
-          component="div"
-          sx={{ color: "brown" }}
+          component="p"
+          sx={{ color: "brown", fontSize: "1.4rem" }}
         >
           {name}
         </Typography>

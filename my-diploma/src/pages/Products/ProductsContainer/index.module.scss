@@ -4,12 +4,13 @@
 }
 .wrapper
 {
-    display: flex;
+    // display: flex;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    // justify-content: center;
     background-image: url(../../../static/FonProducts2.jpg);
     background-position: center;
+    min-height: 95vh;
 
 }
 
@@ -50,7 +51,23 @@ margin-block-start: -16px;
 }
 
 .underWrapper{
-min-height: 955px;
+height: 115vh;
 position: relative;
 top: 3vh;
+}
+
+@media (max-width:450px) {
+    .underWrapper{
+        height: 490vh;
+        position: relative;
+        top: 3vh;
+        }
+}
+
+@media (min-width:1980px) {
+    .underWrapper{
+        height: 84vh;
+        position: relative;
+        top: 3vh;
+        }
 }

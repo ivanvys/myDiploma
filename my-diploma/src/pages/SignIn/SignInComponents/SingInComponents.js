@@ -22,11 +22,7 @@ const SingInComponents = ({ isLoading, error, handleRedirectToSignUp }) => {
 
   const FORM_VALIDATION = Yup.object().shape({
     email: Yup.string().email("Invalid email").required("Email is required"),
-    password: Yup.string()
-      .required("No password provided.")
-      .min(8, "Password is too short - should be 8 chars minimum.")
-      .matches(/[a-zA-Z]/, "Password can only contain Latin letters.")
-      .matches(/[0-9]/g, "Password must include at least one number"),
+    password: Yup.string().required("No password provided."),
   });
 
   return (
@@ -36,8 +32,8 @@ const SingInComponents = ({ isLoading, error, handleRedirectToSignUp }) => {
       ) : (
         <div className={styles.errorResponse}>{error} </div>
       )}
-      <h2 className={styles.text}>Sign In</h2>
-      <h2 className={styles.text}>Please enter your credentials below</h2>
+      <p className={styles.text}>Sign In</p>
+      <p className={styles.text}>Please enter your credentials below</p>
       <Formik
         initialValues={{ ...INITIAL_FORM_STATE }}
         validationSchema={FORM_VALIDATION}

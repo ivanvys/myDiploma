@@ -25,12 +25,15 @@ const AboutUserComponents = ({
             <p className={styles.text}>Your orders: </p>
             <ol className={styles.ordersWrapper}>
               {whatOrderWereMade?.map((item) => {
+                const changeTime = item.createdAt
+                  .replace("T", " at ")
+                  .slice(0, 22);
                 return (
                   <div key={uuid()} className={styles.dropdown}>
                     <li className={`${styles.order} ${styles.dropbtn}`}>
                       Order № {item._id}
                       <br />
-                      Data: {item.createdAt}
+                      Data: on {changeTime}
                     </li>
                     <div className={styles.dropdownContent}>
                       <div className={styles.content}>

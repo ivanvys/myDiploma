@@ -9,7 +9,7 @@
 font-family: 'Pokemon Solid';
 -webkit-text-stroke: 1.5px rgb(53, 100, 174);
 -webkit-text-fill-color: rgb(255, 203, 5);
-font-size: 2vw;
+font-size: 30px;
 display: table-row;
     }
 
@@ -48,11 +48,11 @@ font-family: 'Pokemon Solid';
     font-family: 'Titan One', cursive;
     color: rgb(245, 81, 81);
     cursor: url(../../../static/newFinger.png),default;
-    width: 15vw;
-    height: 10vh;
+    min-width: 50px;
+    height: 5vh;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 2vw;
+    font-size: 20px
     }
     
     .button:active{
@@ -64,11 +64,17 @@ font-family: 'Pokemon Solid';
     }
 
     .Ash{
-    max-width: 14vw;
+    max-width: 7vw;
     position: absolute;
     z-index: 3;
-    top: 43vh;
-    left: 64vw;
+    top: 18vh;
+    left: 63vw;
+    }
+
+    @media(max-width:1024px) {
+        .Ash{
+            display: none;
+        }
     }
 
     .wrapper{

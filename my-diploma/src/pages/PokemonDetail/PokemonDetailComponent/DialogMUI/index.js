@@ -29,7 +29,7 @@ const DialogWindow = ({
           sx={{
             fontFamily: "Pokemon Solid",
             color: "yellowgreen",
-            backgroundColor: " rgb(246, 247, 205)",
+            backgroundColor: "rgb(246, 247, 205)",
           }}
         >{`My name is ${capitalize(
           detailPokemonInfo.name

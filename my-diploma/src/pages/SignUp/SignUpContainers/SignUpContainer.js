@@ -67,7 +67,7 @@ const SignUpContainer = () => {
   });
 
   return (
-    <div className={styles.main}>
+    <div className={styles.mainWrapper}>
       <SignUpComponents
         info={info}
         load={load}

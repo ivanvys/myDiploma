@@ -14,14 +14,12 @@ margin-left: 10px,
     max-width: 300px;
 }
 
-
 .orderText{
 font-family: 'Pokemon Solid';
 -webkit-text-stroke: 1.5px rgb(53, 100, 174);
 -webkit-text-fill-color: rgb(255, 203, 5);
-font-size: 2vw;
+font-size: 30px
 }
-
 
 .button{
 border: solid 2px rgb(177, 100, 100,0.5);
@@ -33,15 +31,43 @@ color: rgb(223, 252, 170);
 -webkit-text-stroke: 1.5px rgb(53, 100, 174);
 -webkit-text-fill-color: rgb(255, 203, 5);
 cursor: url(../../../static/newFinger.png),default;
-width: 15vw;
+min-width: 50px;
 height: 10vh;
 margin-top: 10px;
 margin-bottom: 10px;
-font-size: 2vw;
+font-size: 30px;
 }
+
+@media(max-width:768px) {
+    .orderText{
+        font-family: 'Pokemon Solid';
+        -webkit-text-stroke: 1.5px rgb(53, 100, 174);
+        -webkit-text-fill-color: rgb(255, 203, 5);
+        font-size: 20px
+        }
+        
+        .button{
+        border: solid 2px rgb(177, 100, 100,0.5);
+        border-radius: 10px;
+        background-color: rgba(224, 164, 164, 0.7);
+        cursor: pointer;
+        font-family: 'Titan One', cursive;
+        color: rgb(223, 252, 170);
+        -webkit-text-stroke: 1.5px rgb(53, 100, 174);
+        -webkit-text-fill-color: rgb(255, 203, 5);
+        cursor: url(../../../static/newFinger.png),default;
+        min-width: 50px;
+        height: 10vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        }
+}
+
 .button:active{
 background-color: rgb(223, 154, 154,0.7);
 }
+
 .button:hover{
 border: solid 2px rgb(177, 100, 100,1);
 }

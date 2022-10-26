@@ -21,11 +21,8 @@ const SignUpComponents = ({
         {load ? (
           <Spinner className={styles.spinner} />
         ) : info?.data.success ? (
-          <div className={styles.errorResponse}>
-            <p>
-              {`${info?.data.message}!`} <br />
-              You will be redirected to the sign in page.
-            </p>
+          <div className={styles.succesResponse}>
+            <p>Success! Go to sign in page!</p>
           </div>
         ) : (
           <div className={styles.errorResponse}>
@@ -34,8 +31,8 @@ const SignUpComponents = ({
         )}
       </div>
       <div className={styles.formPlusTextBlock}>
-        <h3 className={styles.text}>Sign Up</h3>
-        <h3 className={styles.text}>Please enter your credentials below</h3>
+        <p className={styles.text}>Sign Up</p>
+        <p className={styles.text}>Please enter your credentials below</p>
         <div className={styles.formBlock}>
           <Formik
             initialValues={{ ...INITIAL_FORM_STATE }}

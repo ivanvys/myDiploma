@@ -57,7 +57,7 @@ const PokemonCard = ({
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ color: "brown" }}
+          sx={{ color: "brown", fontSize: "1.4rem" }}
         >
           {name}
         </Typography>

@@ -2,7 +2,7 @@
 
 .header{
 background: yellowgreen; 
-height: 4vh;
+height: 5vh;
 display: flex;
 justify-content: space-between;
 }
@@ -17,6 +17,8 @@ display: flex;
 justify-content: space-evenly;
 width: 230px;
 cursor: url(../../static//newFinger.png),default;
+margin-bottom: auto;
+margin-top: auto;
 }
 
 .signInAndSignUp{
@@ -24,14 +26,29 @@ display: flex;
 width: 100%;
 justify-content: flex-end;
 margin-right: 100px;
+cursor: url(../../static//newFinger.png),default;
 }
 
 .link{
 font-family: 'Nabla', cursive;
 font-size: 20px;
 margin-left: 20px;
+margin-bottom: auto;
+margin-top: auto;
 text-decoration: none;
 cursor: url(../../static//newFinger.png),default;
+}
+
+@media (max-width:500px) {
+.link{
+font-family: 'Nabla', cursive;
+font-size: 14px;
+margin-left: 20px;
+margin-bottom: auto;
+margin-top: auto;
+text-decoration: none;
+cursor: url(../../static//newFinger.png),default;
+}
 }
 
 .theNumderOfOrders{
