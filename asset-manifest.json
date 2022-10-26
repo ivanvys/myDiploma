@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/myDiploma/static/css/main.1ec1537d.css",
+    "main.js": "/myDiploma/static/js/main.0876a8a6.js",
+    "static/media/DetailPokemonPage.png": "/myDiploma/static/media/DetailPokemonPage.e77cd19d9c994936e69f.png",
+    "static/media/HomePageWhenIsAuth2.png": "/myDiploma/static/media/HomePageWhenIsAuth2.c54d3586e8dab5b3eb0c.png",
+    "static/media/HomePage.png": "/myDiploma/static/media/HomePage.ac3f4e261ab05b8463d8.png",
+    "static/media/UserBackImage.png": "/myDiploma/static/media/UserBackImage.ce38c651b00b7fc88f50.png",
+    "static/media/ash.png": "/myDiploma/static/media/ash.3c77c209ecec132c6dbb.png",
+    "static/media/SignInImage12.jpg": "/myDiploma/static/media/SignInImage12.45a54875818e7d0b0c3b.jpg",
+    "static/media/SignInImage3.png": "/myDiploma/static/media/SignInImage3.3f2e7e5cd6d70886f139.png",
+    "static/media/FonProducts2.jpg": "/myDiploma/static/media/FonProducts2.785b57247cef73f140a4.jpg",
+    "static/media/cryingPokemon.png": "/myDiploma/static/media/cryingPokemon.2c02ac5f38366e5c4164.png",
+    "static/media/pokeball.png": "/myDiploma/static/media/pokeball.1e479e0a796e4778a069.png",
+    "static/media/Pokemon Solid.ttf": "/myDiploma/static/media/Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf",
+    "static/media/cart.png": "/myDiploma/static/media/cart.e26818c0ffe739d3f9e1.png",
+    "index.html": "/myDiploma/index.html",
+    "main.1ec1537d.css.map": "/myDiploma/static/css/main.1ec1537d.css.map",
+    "main.0876a8a6.js.map": "/myDiploma/static/js/main.0876a8a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ec1537d.css",
+    "static/js/main.0876a8a6.js"
+  ]
+}
